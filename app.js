@@ -1,3 +1,4 @@
+const objetivoDeMinutosDiarios = 360
 class MesTrabajado{
     constructor (mes, diasLaborales, totalMinutos, promedio){
         this.mes = mes;
@@ -37,8 +38,8 @@ for (i = 0; i < 3; i++){
     let promedio = +(totalMinutos / diasLaborales);
     meses.push(new MesTrabajado(mes, diasLaborales, totalMinutos, promedio));
     meses [i] .mesCompletado();
-    console.log(meses[i]);
+    
     meses [i] .calculoDinero();
     meses [i] .objetivo();
-    
+    console.log(meses[i]);
 }
